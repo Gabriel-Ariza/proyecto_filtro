@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css2?family=Inclusive+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Inclusive Sans", sans-serif;
+}
+
+
+/* =========================  ESTILOS GENERALES ========================= */
+.container {
+    height: 40vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.titulo {
+    height: 24vh;
+    width: 100%;
+    background-color: #1a1a1a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+}
+.titulo h1 {
+    color: white;
+    font-size: 3em;
+}
+.informacion_title {
+    height: 16vh;
+    width: 100%;
+    background-color: #615ade;
+}
+
+/* =========================  ESTILOS INFO USUARIO  ========================= */
+.info_user {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    height: auto;
+    min-width: 100px;
+    max-width: 240px;
+    width: auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+.info_user i {
+    font-size: 30px;
+    margin-left: 5px;
+    color: #ffffff;
+}
+.usuario_logeado i {
+    margin-right: 4px;    
+}
+.boton_salir i {
+    margin-right: 2px;   
+}
+.info_user span {
+    font-size: 20px;
+    color: rgb(209, 242, 255);
+}
+.usuario_logeado {
+    height: 50%;
+    width: 100%;
+    margin-bottom: 5px;
+    display: flex;
+}
+.info_message {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.cerrar_sesion {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+}
+.boton_salir {
+    background: none;
+    border: none;
+    font-size: 24px;
+    text-decoration: underline;
+    text-decoration: none;
+}
+
+
+/* =========================  ESTILOS CONTENIDO ========================= */
+.container_juegos {
+    min-height: 50vh;
+    height: fit-content;
+    width: 100%;
+    background-color: rgb(39, 41, 41);
+    color: #fff;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    padding: 60px 40px;
+    align-items: center;
+    justify-items: center;
+}
+.tarjeta_juego {
+    height: 450px;
+    width: 100%;
+    max-width: 350px;
+    background: #f9f9d8f6;
+    color: #000;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid #000;
+}
+
+.contenedor_imagen {
+    height: 50%;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2%;
+}
+.contenedor_imagen img {
+    height: 100%;
+    width: 90%;
+    border-radius: 0.5rem;
+}
+.contenedor_texto {
+    height: 50%;
+    width: 100%;
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 1.3rem;
+    font-weight: 550;
+    color: #1a1a1a;
+    letter-spacing: 0.1px;
+    gap: 2px;
+}
+.txt {
+    color: #000;
+    font-size: 1.4rem;
+    font-weight: 800;
+}
+
+
+/* =========================  ESTILOS FOOTER  ========================= */
+.pie {
+    height: 10vh;
+    width: 100%;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pie p {
+    color: white;
+    font-size: 0.9em;
+}
+
+/* =========================  ESTILOS FOOTER  ========================= */
+
+.tabla_clientes {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+.contenido_tabla {
+    position: relative;
+    width: 55%;
+    height: 80%;
+    border-radius: 20px;
+    font-family: 'Inclusive Sans', sans-serif;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px #2fff55d8, 0.5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}

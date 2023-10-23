@@ -1,0 +1,299 @@
+@import url("https://fonts.googleapis.com/css2?family=Inclusive+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Inclusive Sans", sans-serif;
+}
+
+/* =========================  ESTILOS GENERALES ========================= */
+.container {
+    height: 40vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.titulo {
+    height: 24vh;
+    width: 100%;
+    background-color: #1a1a1a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+}
+.titulo h1 {
+    color: white;
+    font-size: 3em;
+}
+
+
+/* =========================  ESTILOS INFO USUARIO  ========================= */
+.info_user {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    height: auto;
+    min-width: 100px;
+    max-width: 240px;
+    width: auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+.info_user i {
+    font-size: 30px;
+    margin-left: 5px;
+    color: #ffffff;
+}
+.usuario_logeado i {
+    margin-right: 4px;    
+}
+.boton_salir i {
+    margin-right: 2px;   
+}
+.info_user span {
+    font-size: 20px;
+    color: rgb(209, 242, 255);
+}
+.usuario_logeado {
+    height: 50%;
+    width: 100%;
+    margin-bottom: 5px;
+    display: flex;
+}
+.info_message {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.cerrar_sesion {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+}
+.boton_salir {
+    background: none;
+    border: none;
+    font-size: 24px;
+    text-decoration: underline;
+    text-decoration: none;
+}
+
+
+/* =========================  ESTILOS FILTRAR OPCIONES  ========================= */
+.info {
+    width: 100%;
+    min-height: 22vh;
+    height: auto;
+    /* background: rgb(137, 221, 251); */
+    background: #2c2929;
+}
+.subtitulo {
+    min-height: 30%;
+    height: fit-content;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-bottom: 4px;
+    color: #fff;
+}
+.subtitulo h3 {
+    font-size: clamp(1rem, 2.3rem, 5rem);
+    font-weight: 900;
+}
+.boton_agg {
+    height: 40px;
+    width: 160px;
+    margin-left: 0.1rem;
+    border-radius: 15px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-align: center;
+}
+.input_buscar {
+    width: 400px;
+    height: 40px;
+    margin-left: 4px;
+    font-size: 1rem;
+    background: #F3F4F6;
+    border-radius: 1rem;
+    padding: 0 1rem;
+    border: 2px solid transparent;
+    transition: border-color .3s cubic-bezier(.25,.01,.25,1) 0s, 
+    color .3s cubic-bezier(.25,.01,.25,1) 0s,background .2s cubic-bezier(.25,.01,.25,1) 0s;
+}
+.input_buscar:hover, .input_buscar:focus {
+    outline: none;
+    border-color: #05060fca;
+}
+.extras {
+    min-height: 65px;
+    height: fit-content;
+    padding-top: 15px;
+}
+.botones_tipo2 {
+    height: 45px;
+    width: 180px;
+    margin-right: 0.5rem;
+    border-radius: 15px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    background-color: #5770ff;
+    color: #F3F4F6;
+    border: none;
+    font-weight: 800;
+}
+#eliminarJuego {
+    margin-left: 0.5rem;
+    background-color: rgb(255, 55, 55);
+}
+#modificarJuego{
+    background-color: #5770ff;
+}
+#abrirModalJuego{
+    background-color: rgb(0, 167, 64);
+}
+
+
+/* =========================  ESTILOS TARJETAS  ========================= */
+
+.contenedor_juegos {
+    min-height: 40vh;
+    width: 100%;
+    height: fit-content;
+    background-image: url(../prueba/fondojuegos.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 60px 40px;
+    align-items: center;
+    justify-items: center;
+}
+.tarjeta_juego {
+    height: 400px;
+    width: 100%;
+    max-width: 1000px;
+/*     background: #ffffa4e0; */
+    background: rgba(255, 255, 255, 0.814);
+    border-radius: 50px;
+    padding: 0 25px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 2px solid #000;
+}
+.tarjeta_imagen {
+    height: 90%;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 2%;
+}
+.tarjeta_imagen img {
+    height: 100%;
+    width: 100%;
+    border-radius: 1rem;
+}
+.tarjeta_texto {
+    height: 50%;
+    width: 100%;
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 1.1rem;
+    font-weight: 550;
+    color: #1a1a1a;
+    letter-spacing: 0.1px;
+    gap: 2px;
+}
+
+
+/* =========================  ESTILOS CLIENTES  ========================= */
+
+/* .contenedor_juegos {
+    min-height: 40vh;
+    width: 100%;
+    background-color: #2736b7;
+    width: 100%;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 30px;
+    padding: 60px 40px;
+    align-items: center;
+    justify-items: center;
+} */
+.juegos {
+    height: 600px;
+    width: 100%;
+    max-width: 600px;
+    background: #f9f9d8f6;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    perspective: 1000px;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+    border: 3px solid #000;
+}
+.contenedor_imagen {
+    height: 50%;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2%;
+}
+.contenedor_imagen img {
+    height: 100%;
+    width: 100%;
+    border-radius: 0.5rem;
+}
+.contenedor_texto {
+    height: 50%;
+    width: 100%;
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 1.1rem;
+    font-weight: 550;
+    color: #1a1a1a;
+    letter-spacing: 0.1px;
+    gap: 2px;
+}
+.txt {
+    color: #000;
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+
+
+/* =========================  ESTILOS FOOTER  ========================= */
+.pie {
+    height: 10vh;
+    width: 100%;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pie p {
+    color: white;
+    font-size: 0.9em;
+}

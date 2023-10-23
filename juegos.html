@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/2e497294d6.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="css/juegos.css">
+    <title>Juegos - GameSoft</title>
+</head>
+
+
+<body>
+    <div class="container">
+        <header class="titulo">
+            <h1>Administracion Juegos</h1>
+            <div class="info_user">
+                <div class="usuario_logeado">
+                    <i class="fa-regular fa-user"></i>
+                    <div class="info_message"><span id="name_display">Nombre de Usuario</span></div>
+                </div>
+                <div class="cerrar_sesion">
+                    <button id="salir_cuenta" class="boton_salir">
+                        <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                        <span>Salir</span>
+                    </button>
+                </div>
+            </div>
+        </header>
+        <section class="info">
+            <div class="subtitulo"><h3>Filtrar Juegos</h3></div>
+            <div class="juan">
+                <input type="text" id="search" class="input_buscar" placeholder="Nombre o ID">
+                <button id="buscarClientes" class="boton_agg">Buscar</button>
+            </div>
+            <div class="extras">
+                <button id="eliminarJuego" class="botones_tipo2">Eliminar Juego</button>
+                <button id="modificarJuego" class="botones_tipo2">Modificar Juego</button>
+                <button id="abrirModalJuego" class="botones_tipo2">Crear Juego</button>
+            </div>
+        </section>
+    </div>
+
+    <div class="contenedor_juegos" id="juegos"></div>
+
+    <div class="pie">
+        <p>Derechos reservados &copy; 2023 GameSoft</p>
+    </div>
+    
+
+    <script src="js/juegos.js"></script>
+</body>
+</html>

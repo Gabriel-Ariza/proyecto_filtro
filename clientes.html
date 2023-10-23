@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/2e497294d6.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="css/clientes.css">
+    <title>Clientes - GameSoft</title>
+</head>
+
+
+<body>
+    <div class="container">
+        <header class="titulo">
+            <h1>Administracion de clientes</h1>
+            <div class="info_user">
+                <div class="usuario_logeado">
+                    <i class="fa-regular fa-user"></i>
+                    <div class="info_message"><span id="name_display">Nombre de Usuario</span></div>
+                </div>
+                <div class="cerrar_sesion">
+                    <button id="salir_cuenta" class="boton_salir">
+                        <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                        <span>Salir</span>
+                    </button>
+                </div>
+            </div>
+        </header>
+        <section class="info">
+            <div class="subtitulo"><h3>Filtrar clientes</h3></div>
+            <div class="juan">
+                <input type="text" id="search" class="input_buscar" placeholder="Nombre o ID">
+                <button id="buscarClientes" class="boton_agg">Buscar</button>
+            </div>
+            <div class="extras">
+                <button id="eliminarCliente" class="botones_tipo2">Eliminar Cliente</button>
+                <button id="modificarCliente" class="botones_tipo2">Modificar Cliente</button>
+                <button id="abrirModalRegistro" class="botones_tipo2">Registrar Cliente</button>
+            </div>
+        </section>
+    </div>
+
+
+    <div class="contenedor_clientes" id="clientes"></div>
+
+    <div class="pie">
+        <p>Derechos reservados &copy; 2023 GameSoft</p>
+    </div>
+
+    <div id="modalRegistro" class="modal">
+        <div class="modal_content">
+            <span class="close" id="boton_x">&times;</span>
+            <h2>Registrar Cliente</h2>
+            <form id="formularioRegistro">
+                <label for="id">Número de Identificación:</label>
+                <input type="text" id="id" class="inpt" required>
+                <label for="nombres">Nombres:</label>
+                <input type="text" id="nombres" class="inpt" required>
+                <label for="apellidos">Apellidos:</label>
+                <input type="text" id="apellidos" class="inpt" required>
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" class="inpt" required>
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" class="inpt" required>
+                <label for="fechaNacimiento">Fecha de Nacimiento:</label>
+                <input type="date" id="fechaNacimiento" class="inpt" required>
+                <label for="nacionalidad">Nacionalidad:</label>
+                <input type="text" id="nacionalidad" class="inpt" required>
+                <div class="content_guardar"><button type="submit" class="guardar">Registrar</button></div>
+            </form>
+        </div>
+    </div>
+
+    <div class="mensaje_exito">
+        <div class="mensaje_contenido">
+                <div class="texto_mensaje">
+                    <span class="yuca">&times;</span>
+                    <h3>Exito</h3>
+                </div>
+                <div class="contenedor_barra">
+                    <div class="barra_progreso">
+                        <div class="progreso"></div>
+                    </div>
+                </div>
+        </div>
+    </div>
+
+    <script src="js/clientes.js"></script>
+</body>
+</html>
