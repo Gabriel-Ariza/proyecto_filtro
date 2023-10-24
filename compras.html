@@ -32,37 +32,38 @@
         <section class="informacion_title"></section>
     </div>
 
-    <div class="container_juegos">
-        <div class="tarjeta_juego">
-            <div class="contenedor_imagen">
-                <img src="https://i.blogs.es/5ccfad/minecraft1/1366_2000.jpeg" alt="">
-            </div>
-            <div class="contenedor_texto">
-                <p>Minecraft</p>
-                <p>2011</p>
-                <p>Aventura</p>
-                <p>stock 5</p>
-                <p>puntos 30</p>
-                <button>Comprar</button>
-            </div>
-        </div>
+    <div class="container_juegos" id="container_juegos">
     </div>
 
     <div class="pie">
         <p>Derechos reservados &copy; 2023 GameSoft</p>
     </div>
 
-    <div class="tabla_clientes">
+    <div class="tabla_clientes" id="modal_tabla">
         <div class="contenido_tabla">
-            <h1>Listado Clientes</h1>
 
-            <div class="row">
-                <p>cliente.nombre</p>
-                <button>añadir juego</button>
+            <h1>Listado Clientes</h1>
+            <span class="close" id="cerrar_x">&times;</span>
+            <div class="row" id="papa_clientes">
             </div>
+
         </div>
     </div>
 
-    <script src="js/compras.js"></script>
+    <div class="mensaje_exito">
+        <div class="mensaje_contenido">
+                <div class="texto_mensaje">
+                    <span class="yuca">&times;</span>
+                    <h3>Exito</h3>
+                </div>
+                <div class="contenedor_barra">
+                    <div class="barra_progreso">
+                        <div class="progreso"></div>
+                    </div>
+                </div>
+        </div>
+    </div>
+
+    <script src="js/compras.js" type="module"></script>
 </body>
 </html>
